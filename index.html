@@ -1,10 +1,85 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cooking App</title>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js"></script>
   </head>
   <body>
-    <h1>Cooking App</h1>
-    <script src="js/scripts.js"></script>
+    <div class="container">
+      <div class="jumbotron">
+      <h1>Cooking App</h1>
+      <div class="d-flex justify-content-center">
+        <div class="row">
+
+          <div class="col">
+            <form id="galLiters">
+              <div class="form-group">
+                <label for="galLiters">Gallons to Liters</label>
+                <input placeholder="Gallons" id="galLiters-input" class="form-control" type="number">
+              </div>
+              <button type="submit" class="btn btn-primary">Convert</button>
+            </form>
+            <div class="output" id="galLiters-output"></div>
+          </div>
+          <div class="col">
+            <form id="toOunces">
+              <div class="form-group">
+                <label for="toOunces">Ounces to Grams</label>
+                <input placeholder="Ounces" id="ounceGrams-input" class="form-control" type="number">
+              </div>
+              <button type="submit" class="btn btn-primary">Convert</button>
+            </form>
+            <div class="output" id="ounceGrams-output"></div>
+          </div>
+        </div>
+          <!-- <div class="col-md-3">
+            <form id="subtract">
+              <div class="form-group">
+                <label for="subtract1">1st number:</label>
+                <input id="subtract1" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="subtract2">2nd number:</label>
+                <input id="subtract2" class="form-control" type="text">
+              </div>
+              <button type="submit" class="btn btn-primary">Subtract!</button>
+            </form>
+            <div id="subtract-output"></div>
+          </div>
+          <div class="col-md-3">
+            <form id="multiply">
+              <div class="form-group">
+                <label for="multiply1">1st number:</label>
+                <input id="multiply1" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="multiply2">2nd number:</label>
+                <input id="multiply2" class="form-control" type="text">
+              </div>
+              <button type="submit" class="btn btn-primary">Multiply!</button>
+            </form>
+            <div id="multiply-output"></div>
+          </div>
+          <div class="col-md-3">
+            <form id="divide">
+              <div class="form-group">
+                <label for="divide1">1st number:</label>
+                <input id="divide1" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="divide2">2nd number:</label>
+                <input id="divide2" class="form-control" type="text">
+              </div>
+              <button type="submit" class="btn btn-primary">Divide!</button>
+            </form>
+            <div id="divide-output"></div>
+          </div> -->
+        </div>
+
+
+      </div>
   </body>
 </html>
